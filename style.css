@@ -105,8 +105,6 @@ h1{
     color: var(--color-primary)
 }
 
-
-
 .hero{
     background-image: linear-gradient(rgba(0, 0, 0, 0.4)), url('kwiaty.jpg');
     background-size: cover;
@@ -194,4 +192,73 @@ h1{
 .kartaproduktu img{
     width: 100%;
     height: 250px;
+}
+
+.kartaproduktu button{
+    background-color: var(--color-secondary);
+    padding: 0.8rem 1.5rem;
+}
+
+.kontakt{
+    background-color: var(--color-background);
+    padding: 5rem 2rem;
+    gap: 4rem;
+    align-items: flex-start;
+    flex-wrap: wrap;
+}
+
+.kontakt input[type="text"],
+.kontakt input[type="email"],
+.kontakt textarea{
+    width: 100%;
+    padding: 1rem;
+    margin-bottom: 1rem;
+    border: 1px solid #ddd;
+    border-radius: 0.5rem;
+    font-size: 1rem;
+    font-family: inherit;
+}
+
+.lokalizacja h2{
+    font-size: 2rem;
+    color: var(--color-primary);
+    margin-bottom: 1.5rem;
+}
+
+.lokalizacja, .kontakt{
+    flex: 1 1 450px;
+    max-width: 50%;
+}
+
+.mapa{
+    width: 100%;
+    height: 20rem;
+    background-color: #ddd;
+    margin-top: 1.5rem;
+    border-radius: 0.5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #777;
+    font-style: italic;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+}
+
+footer{
+    background-color: #444;
+    color: #ddd;
+    text-align: center;
+    justify-content: center;
+    min-height: 5rem; 
+}
+
+@media screen and (max-width: 800px)
+{
+    .flex-container{
+        flex-direction: column;
+    }
+
+    .onasobraz{
+        display: none;
+    }
 }
